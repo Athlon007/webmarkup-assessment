@@ -157,3 +157,20 @@ img {
         display: inline;
     }
 }
+
+footer {
+    margin-top: 4em;
+}
+
+footer > * {
+    display: inline;
+}
+
+footer > p:first-child {
+    width: auto;
+    float:left;
+}
+
+footer > p:nth-child(2) {
+    float: right
+}
