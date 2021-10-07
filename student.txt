@@ -1,0 +1,4 @@
+Student name: Konrad Figura
+Student number: 680886
+Student class: IT1b
+URL: <todo>
