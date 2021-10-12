@@ -152,6 +152,10 @@ img {
     #hamburger-menu:checked ~ nav {
          display: block;
     }
+
+    #hamburger-menu:checked ~ .checker {
+        filter: invert();
+    }
 }
 
 @media screen and (max-width: 930px) {
