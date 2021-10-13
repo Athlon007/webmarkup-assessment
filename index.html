@@ -4,35 +4,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Best Tours</title>
+    <title>Anarchy Tours</title>
     <meta name="description" content="The best tours for the right money!">
     <meta name="keywords" content="touris, travel, inexliensive, vacations, holidays">
     <meta name="author" content="Konrad Figura">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="stylesheet" tylie="text/css" href="css/style.css" />
-    <link rel="shortcut icon" tylie="image/svg" href="img/logo.svg" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" type="image/svg" href="img/logo.svg" />
 </head>
 
 <body>
     <img class="logo" src="img/logo.svg" alt="Logo">
-    <h1 id="logo-comliany-name">Best Trips</h1>
+    <h1 id="logo-comliany-name">Anarchy Tours</h1>
     <h2>Totally not sketchy - we swear!</h2>
     <input id="hamburger-menu" type="checkbox" />
     <label for="hamburger-menu" class="checker"></label>
     <nav>
         <ul>
-            <a href="bestdestinations.html">
-                <li>Best Destination</li>
-            </a>
-            <a href="tickets.html">
-                <li>Tickets</li>
-            </a>
-            <a href="contact.html">
-                <li>Contact</li>
-            </a>
+            <li><a href="bestdestinations.html">Best Destination</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <section id="flex-container-video-aside">
+    <section id="home-flexcontainer">
+        <h2>Home</h2>
         <video id="video-pc" autoplay="autoplay" muted loop>
             <source src="videos/video_pc.mp4" type="video/mp4">
             <source src="videos/video_pc.ogv" type="video/ogg">
@@ -45,41 +40,88 @@
         </video>
         <section id="products">
             <h3>Products</h3>
-            <article>
-                <header>
-                    <h4>Gdańsk</h4>
+            <article class="product">
+                <header class="product-header">
+                    <h4>Gran Canaria</h4>
                 </header>
-                <p>Gdańsk is a city on the Baltic coast of northern Poland. With a population of 470,907, Gdańsk
-                    is
-                    the capital and largest
-                    city of the Pomeranian Voivodeship and the most prominent city in the geographical region of
-                    Pomerania.</p>
-                <img src="img/gdansk.jpg" alt="Gdansk">
+                <p class="product-description">Gran Canaria is an island located on the Atlantic Ocean, west from the
+                    coast of Morocco. It is the third largest and
+                    most populous of the Canary Islands. It is often referred to as "the miniature continent", due to
+                    the variety of
+                    climates, landscapes and beaches found. Most of the tourists visit the southern part, while the
+                    northern tends to be
+                    cooler. The capital city is Las Palmas de Gran Canaria.</p>
+                <footer class="product-footer">
+                    <a href="https://bit.ly/3v6sdt8">
+                        <p>More info...</p>
+                    </a>
+                </footer>
+                <figure class="product-image">
+                    <img src="img/grancanaria.jpg" alt="Gran Canaria">
+                    <figcaption>Photo Source: TUI</figcaption>
+                </figure>
             </article>
-            <article>
-                <header>
-                    <h4>Gdańsk</h4>
+            <article class="product">
+                <header class="product-header">
+                    <h4>Ibiza</h4>
                 </header>
-                <p>Gdańsk is a city on the Baltic coast of northern Poland. With a population of 470,907, Gdańsk
-                    is the capital and largest city of the Pomeranian Voivodeship and the most prominent city in the
-                    geographical region of Pomerania.</p>
-                <img src="img/gdansk.jpg" alt="Gdansk">
+                <p class="product-description">Ibiza is a Spanish island located 150 kilometers east from Valencia. It
+                    is the third largest of Balearic Islands, an
+                    autonomous community of Spain. The island has become to be associated with nightlife, electronic
+                    dance music and the
+                    club scene, all of which attract the large amount of tourists. An interesting fact about the island
+                    is it found its way
+                    into the game Test Drive Unlimited 2, in which the player can drive around the entire island.</p>
+                <footer class="product-footer">
+                    <a href="https://bit.ly/2YKa48m">
+                        <p>More info...</p>
+                    </a>
+                </footer>
+                <figure class="product-image">
+                    <img src="img/ibiza.jpg" alt="Ibiza">
+                    <figcaption>Photo Source: TUI</figcaption>
+                </figure>
+            </article>
+            <article class="product">
+                <header class="product-header">
+                    <h4>Florida</h4>
+                </header>
+                <p class="product-description">Florida is one out of 50 states, located at the south-east coast of
+                    United States of America - the home of American
+                    vacations. At the hottest state of the US, it is also a home of Disney World, alligators, Daytona
+                    International Speedway
+                    (the most known NASCAR race track). Here you can enjoy 820 miles (1320 kilometers) of beaches,
+                    thousands of palms and
+                    fresh water springs. And if you want to watch something spectacular, be sure to visit the Kennedy
+                    Space Centre.</p>
+                <footer class="product-footer">
+                    <a href="https://bit.ly/3DCsjM7">
+                        <p>More info...</p>
+                    </a>
+                </footer>
+                <figure class="product-image">
+                    <img src="img/florida.jpg" alt="Ibiza">
+                    <figcaption>Photo Source: TUI</figcaption>
+                </figure>
             </article>
         </section>
-        <aside id="flex-aside-content">
-            <h3>Best destinations</h3>
+        <aside id="aside-flex">
+            <h3>Best upcoming destinations</h3>
+            <p>List of the destinations that will become hot in next tourist seasons.</p>
             <ol>
                 <li>Poland</li>
-                <li>Ibiza</li>
-                <li>O'ahu</li>
                 <li>Mars</li>
-                <li>Cuba</li>
+                <li>Silent Hill</li>
+                <li>Tilted Towers</li>
+                <li>Bedrock</li>
             </ol>
         </aside>
     </section>
     <footer class="copyright-grid">
         <p id="copyright-notice">Copyright &copy; 2021 Konrad Figura</p>
-        <p id="cookiez-notice">This site is using cookies. By using this website, you agree to our cookie policy.</p>
+    </footer>
+    <footer id="cookie-notice">
+        <p>This site is using cookies. By using this website, you agree to our cookie policy.</p>
     </footer>
 </body>
 
