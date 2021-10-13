@@ -77,7 +77,7 @@ img {
     border-radius: 2%;
 }
 
-#video-pc, #videop-tablet {
+video {
     border-radius: 1em;
 }
 
@@ -85,6 +85,28 @@ img {
     visibility: hidden;
 }
 
+#flex-aside-content {
+    width: 10em;
+}
+
+.copyright-grid {
+    display: grid;
+    margin-top: 4em;
+    grid-template-areas: "copyrightTag cookieTag";
+    justify-content: stretch;
+    grid-gap: 2em;
+}
+
+#copyright-notice {
+    grid-area: copyrightTag;
+}
+
+/* I have no clue why, but if I named this ID "cookies-notice", it wouldn't show at all O.o */
+#cookiez-notice {
+    grid-area: cookieTag;
+    color: #fa0;
+    text-align: right;
+}
 
 @media screen and (max-width: 720px)
 {
@@ -156,10 +178,7 @@ img {
     #hamburger-menu:checked ~ .checker {
         filter: invert();
     }
-}
 
-@media screen and (max-width: 930px) {
-    /* TABLET & MOBILE */
     article > img {
         width: 100%;
         float: left;
@@ -171,8 +190,20 @@ img {
         float:left;
         display: block;
     }
-}
 
+    .copyright-grid {
+        grid-template-areas:
+        "copyrightTag",
+        "cookieTag";
+        grid-gap: 0em;
+    }
+
+    #cookiez-notice {
+        text-align: left;
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+}
 @media screen and (min-width: 720px) and (max-width: 930px)
 {
     /* TABLET */
@@ -193,8 +224,18 @@ img {
 
     #flex-aside-content {
         order: 0;
-        flex-basis: 100%;
-        width: 100%;
+    }
+
+    article > img {
+        width: 50%;
+        float: left;
+        display: block;
+    }
+
+    article > p {
+        width:100%;
+        float:left;
+        display: block;
     }
 }
 
@@ -241,22 +282,4 @@ img {
         width:40%;
         display: inline;
     }
-}
-
-footer {
-    margin-top: 4em;
-}
-
-footer > * {
-    display: inline;
-}
-
-footer > p:first-child {
-    width: auto;
-    float:left;
-}
-
-footer > p:nth-child(2) {
-    float: right;
-    color: #fa0;
 }
