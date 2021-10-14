@@ -5,24 +5,15 @@ body
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo
-{
-    max-width: 6em;
-}
-
 h1
 {
     font-size: 2.5em;
-    display: inline;
-    position: absolute;
 }
 
 h2
 {
     font-size: 2em;
     font-weight: 500;
-    margin-left: 0.55em;
-    font-style: oblique;
 }
 
 h3 {
@@ -59,6 +50,33 @@ nav > ul > li > a:link, a:active, a:visited {
 
 nav > ul > li > a:hover {
     background-color: #32558E;
+}
+
+.logo-grid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+}
+
+.logo
+{
+    max-width: 6em;
+    margin-bottom: auto;
+    margin-right: -4em;
+}
+
+.logo-company-name
+{
+    grid-column: 2;
+    margin-bottom: auto;
+}
+
+.logo-company-payoff
+{
+    grid-column: 1 / 3;
+    font-style: oblique;
+    margin-top: -0.5em;
 }
 
 #home-flexcontainer {
@@ -147,7 +165,6 @@ figure > figcaption {
     grid-area: copyrightTag;
 }
 
-/* I have no clue why, but if I named this ID "cookies-notice", it wouldn't show at all O.o */
 #cookie-notice {
     position: fixed;
     opacity: 50%;
@@ -163,6 +180,14 @@ figure > figcaption {
 
 #cookie-notice > p {
     margin: 1em;
+}
+
+@media screen and (max-width: 388px)
+{
+    .logo-company-payoff
+    {
+        margin-top: 0em;
+    }
 }
 
 @media screen and (max-width: 720px)
