@@ -22,6 +22,7 @@ h3 {
 
 h4 {
     font-size: 1.25em;
+    margin-bottom: 0em;
 }
 
 nav {
@@ -182,6 +183,69 @@ figure > figcaption {
     margin: 1em;
 }
 
+/* BEST DESTINATIONS */
+
+#bestdestinations-grid {
+    margin-left: 1em;
+    margin-right: 3em;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: stretch;
+    grid-gap: 4em;
+    grid-template-areas:
+        'dest2 dest1 dest3'
+        'dest2 dest1 dest3'
+        'dest5 dest1 dest3'
+        'dest5 dest1 dest4'
+        'dest5 dest1 dest4'
+        'dest5 dest1 dest4'
+        'dest5 dest6 dest6'
+        'aside1 aside2 aside3';
+}
+
+#bestdestinations-grid > * {
+    width: 100%;
+    background-color: rgb(220, 220, 220);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+#destination-1 {
+    grid-area: dest1;
+}
+
+#destination-2 {
+    grid-area: dest2;
+}
+
+#destination-3 {
+    grid-area: dest3;
+}
+
+#destination-4 {
+    grid-area: dest4;
+}
+
+#destination-5 {
+    grid-area: dest5;
+}
+
+#destination-6 {
+    grid-area: dest6;
+}
+
+#aside-product1 {
+    grid-area: aside1;
+}
+
+#aside-product2 {
+    grid-area: aside2;
+}
+
+#aside-product3 {
+    grid-area: aside3;
+}
+
 @media screen and (max-width: 388px)
 {
     .logo-company-payoff
@@ -284,6 +348,21 @@ figure > figcaption {
         grid-column: 1 / 2;
         grid-row: 2;
     }
+
+    #bestdestinations-grid {
+        grid-template-areas:
+            'dest5 dest5'
+            'dest3 dest3'
+            'dest2 dest2'
+            'dest1 dest1'
+            'aside1 aside1'
+            'aside2 aside2'
+            'aside3 aside3';
+    }
+
+    #destination-4, #destination-6 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 930px) {
@@ -344,6 +423,23 @@ figure > figcaption {
 
     .product-image {
         width: 75%;
+    }
+
+    #bestdestinations-grid {
+        grid-template-areas:
+            'dest1 dest2'
+            'dest1 dest2'
+            'dest3 dest2'
+            'dest3 dest5'
+            'dest3 dest5'
+            'dest3 dest5'
+            'dest6 dest6'
+            'dest6 dest6'
+            'aside1 aside2';
+    }
+
+    #destination-4, #aside-product3 {
+        display: none;
     }
 }
 
