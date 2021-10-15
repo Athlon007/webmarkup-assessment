@@ -1,4 +1,4 @@
 Student name: Konrad Figura
 Student number: 680886
 Student class: IT1b
-URL: <todo>
+URL student GitHub repository: https://github.com/Athlon007/webmarkup-assessment
